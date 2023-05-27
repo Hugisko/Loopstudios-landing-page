@@ -1,6 +1,6 @@
 const hamburger = document.querySelector(".hamburger");
 const close_btn = document.querySelector(".close");
-const nav = document.querySelector(".nav");
+const nav = document.querySelector(".navigation");
 const cards = document.querySelectorAll(".card");
 
 hamburger.addEventListener('click', () => {

@@ -80,7 +80,7 @@ header {
     width: 150px;
 }
 
-.nav {
+.navigation {
     position: absolute;
     inset: 0;
     background-color: var(--Black);
@@ -92,11 +92,11 @@ header {
     transition: all .5s ease-in-out;
 }
 
-.nav.active {
+.navigation.active {
     transform: translateX(0%);
 }
 
-.nav ul,
+.navigation ul,
 .nav-footer ul {
     display: flex;
     flex-direction: column;
@@ -298,6 +298,8 @@ footer {
 
 @media (min-width: 993px) {
     header {
+        background: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.5)), url("./images/desktop/image-hero.jpg") no-repeat;
+        background-size: cover;
         padding: 4rem 7rem;
         height: auto;
     }
@@ -307,14 +309,14 @@ footer {
         display: none;
     }
 
-    .nav {
+    .navigation {
         transform: translateX(0);
         position: static;
         background-color: transparent;
         padding: 0;
     }
 
-    .nav ul {
+    .navigation ul {
         flex-direction: row;
         justify-content: center;
         align-items: center;
