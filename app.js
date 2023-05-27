@@ -20,7 +20,7 @@ let options = {
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if(entry.isIntersecting){
-          const card = entry.target;
+          let card = entry.target;
           card.style.opacity = "1";
           observer.unobserve(entry.target);
         }
