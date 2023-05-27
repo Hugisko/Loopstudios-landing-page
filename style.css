@@ -341,6 +341,7 @@ footer {
     main {
         padding: 7rem;
         padding-bottom: 8rem;
+        gap: 9rem;
     }
 
     .vr-section {
@@ -371,6 +372,11 @@ footer {
     .creations {
         grid-template-columns: 1fr 1fr;
         place-items: initial;
+    }
+
+    .creations h2 {
+        align-self: center;
+        font-size: 3rem;
     }
 
     .cta {
